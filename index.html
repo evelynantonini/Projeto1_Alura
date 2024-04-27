@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viva Cosméticos</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="images/logo_principal.svg" alt="Logo do Viva Cosméticos" class="header__imagem">
+        </div>
+        <div class="header__logo__pequena">
+            <img src="images/logo_pequena.svg" alt="Logo do Viva Cosméticos" class="header__imagem__pequena">
+        </div>
+        <div class="header__pesquisa">
+            <input class="barra__pesquisa" placeholder="O que você está buscando hoje?">
+        </div>
+        <div class="header__itens">
+            <a href="#"><img src="images/usuario.svg" alt="icone usuário" class="header__item"></a>
+            <a href="#" class="header__item__texto">Entre</a>
+            <a href="#"><img src="images/favorito.svg" alt="icone favoritos" class="header__item"></a>
+            <a href="#"><img src="images/sacola.svg" alt="icone usuário" class="header__item"></a>
+        </div>
+        <div class="header__pesquisa_mobile">
+            <input class="barra__pesquisa__mobile" placeholder="O que você está buscando hoje?">
+        </div>
+
+    </header>
+
+    <section class="carrossel">
+                <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images/poster_carrossel1.png"></div>
+            <div class="swiper-slide"><img src="images/poster_carrossel2.png"></div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- If we need scrollbar
+            <div class="swiper-scrollbar"></div> -->
+        </div>
+
+    </section>
+
+    <div class="cards">
+        <div class="cards__titulo">
+            <h1 class="cards__titulo__titulo">produtos</h1>
+        </div>
+
+        <div class="cards_itens">
+            <div class="cards__item">
+                <a href="#"></a>
+                <a href="#"><img src="images/icone_perfume.svg" alt="icone de perfume" class="card__imagem"></a>
+                <hr class="card__imagem__linha">
+                <a href="#" class="card__imagem__descricao">Pefumes</a>
+            </div>
+
+            <div class="cards__item">
+                <a href="#"><img src="images/icone_creme.svg" alt="icone de cremes" class="card__imagem"></a>
+                <hr class="card__imagem__linha">
+                <a href="#" class="card__imagem__descricao">Cremes</a>
+            </div>
+
+            <div class="cards__item">
+                <a href="#"><img src="images/icone_kit.svg" alt="icone de kits" class="card__imagem"></a>
+                <hr class="card__imagem__linha">
+                <a href="#" class="card__imagem__descricao">Kits</a>
+            </div>
+
+            <div class="cards__item">
+                <a href="#"><img src="images/icone_make.svg" alt="icone de maquiagem" class="card__imagem"></a>
+                <hr class="card__imagem__linha">
+                <a href="#" class="card__imagem__descricao">Makes</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="produtos">
+        <div class="produtos__titulo">
+            <h1>Descontos Imperdíveis</h1>
+        </div>
+
+        <div class="produtos__card">
+            <div class="produtos_card__card">
+                <img src="images/icone_produto_perfume.svg" alt="Foto de um perfume" class="produtos_card__imagem">
+                <div class="produtos__card__texto">   
+                    <h2 class="produtos_card__titulo">Magia</h2>
+                    <p class="produtos_card__descricao">Perfume coleção Magia</p>
+                    <p class="produtos_card__preco">R$ 75,00</p>
+                </div>  
+                <a href="#"" class="produtos_card__botao">Adicionar ao carrinho</a>
+            </div>
+
+            <div class="produtos_card__card">  
+                <img src="images/icone_produto_creme.svg" alt="Foto de um creme" class="produtos_card__imagem">
+                <div class="produtos__card__texto">
+                    <h2 class="produtos_card__titulo">LIF</h2>
+                    <p class="produtos_card__descricao">Creme hidratante 200 ml</p>
+                    <p class="produtos_card__preco">R$ 35,40</p>
+                </div>  
+                <a href="#"" class="produtos_card__botao">Adicionar ao carrinho</a>
+            </div>
+
+            <div class="produtos_card__card">  
+                <img src="images/icone_produto_creminho.svg" alt="Foto de um creme de mãos" class="produtos_card__imagem">
+                <div class="produtos__card__texto">
+                    <h2 class="produtos_card__titulo">PuroSó</h2>
+                    <p class="produtos_card__descricao">Creme para mãos, 50 ml</p>
+                    <p class="produtos_card__preco">R$ 20,99</p>
+                </div>    
+                <a href="#"" class="produtos_card__botao">Adicionar ao carrinho</a>
+            </div>
+
+            <div class="produtos_card__card">  
+                <img src="images/icone_produto_esfoliante.svg" alt="Foto de um esfoliante" class="produtos_card__imagem">
+                <div class="produtos__card__texto">
+                    <h2 class="produtos_card__titulo">PuroSó</h2>
+                    <p class="produtos_card__descricao">Esfoliante para o corpo, 200 ml</p>
+                    <p class="produtos_card__preco">R$ 20,50</p>
+                </div>
+                <a href="#"" class="produtos_card__botao">Adicionar ao carrinho</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="informacoes">
+            <h2 class="informacoes__titulo">Viva cosméticos</h2>
+            <a href="#" class="informacoes__texto">Sobre</a>
+            <a href="#" class="informacoes__texto">Atendimento</a>
+        </div>
+        <div class="contatos">
+            <h2 class="contatos__titulo">Siga a gente!</h2>
+            <div class="contatos__item">
+                <div class="contatos__item__item">
+                    <a href="#"><img src="images/instagram.svg" class="contatos__item__icone"></a>
+                    <a href="#" class="contatos__item__texto">Instagram</a>
+                </div>
+                
+                <div class="contatos__item__item">
+                    <a href="#"><img src="images/facebook.svg" class="contatos__item__icone"></a>
+                    <a href="#" class="contatos__item__texto">Facebook</a>
+                </div>
+                
+                <div class="contatos__item__item">
+                    <a href="#"><img src="images/x twitter.svg" class="contatos__item__icone"></a>
+                    <a href="#" class="contatos__item__texto">X | Twitter</a>
+                </div>
+
+                <div class="contatos__item__item">
+                    <a href="#"><img src="images/tiktok.svg" class="contatos__item__icone"></a>
+                    <a href="#" class="contatos__item__texto">TikTok</a>
+                </div>
+
+                <div class="contatos__item__item">
+                    <a href="#"><img src="images/youtube.svg" class="contatos__item__icone"></a>
+                    <a href="#" class="contatos__item__texto">Youtube</a>
+                </div>
+                
+            </div>  
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+        speed: 1200,
+        autoplay: {
+         delay: 2000,
+        },
+        spaceBetween: 50,
+        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+        });
+    </script>
+
+</body>
+</html>

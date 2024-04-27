@@ -1,7 +1,7 @@
 .header {
     background-color: var(--verde-escuro);
     display: flex;
-    flex-flow: nowrap;
+    flex-flow:;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -114,7 +114,7 @@
     }
 
     .header__itens {
-        padding-right: 1em;
+        padding-right: 0em;
     }
 
     .barra__pesquisa__mobile {
@@ -133,7 +133,7 @@
         color: var(--verde-escuro);
         font-family: var(--fonte-principal);
         font-weight: 500;
-        font-size: 16px;
+        font-size: 100%;
         padding: 1em 2em;
     }
 

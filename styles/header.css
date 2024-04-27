@@ -1,0 +1,141 @@
+.header {
+    background-color: var(--verde-escuro);
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header__imagem {
+    padding: 8%;
+    width: 50%;
+    flex-grow: 1;
+}
+
+.header__imagem__pequena {
+    display: none;
+}
+
+.header__pesquisa {
+    flex-grow: 2;
+}
+
+.barra__pesquisa {
+    background: var(--branco);
+    border: 1px solid var(--branco);
+    border-radius: 20px;
+    flex-grow: 2;
+    width: 50em;
+    height: 3em;
+}
+
+.barra__pesquisa::placeholder {
+    background: url(/images/lupa.svg) no-repeat;
+    background-size: 4em;
+    background-position: right;
+    color: var(--verde-escuro);
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 1em 2em;
+}
+
+.header__itens {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2em;
+}
+
+.header__item {
+    padding: 1em;
+    width: 2em;
+
+}
+
+.header__item__texto {
+    text-decoration: none;
+    color: var(--branco);
+    font-weight: 500;
+}
+
+.header__item:hover {
+    transform: scale(1.2);
+}
+
+
+.header__item__texto:hover {
+    transform: scale(1.2);
+}
+
+.header__pesquisa_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 844px) {
+    .header__imagem {
+        display: none;
+    }
+
+    .barra__pesquisa {
+        display: none;
+    }
+
+    .header__item__texto {
+        display: none;
+    }
+
+    .header {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .header__logo__pequena {
+
+    }
+
+    .header__imagem__pequena {
+        display: block;
+        padding: 1em;
+        transform: scale(0.8);
+    }
+    
+    .header__pesquisa_mobile {
+        display: block;
+        background: var(--branco);
+        border: 1px solid var(--branco);
+        border-radius: 20px;
+        flex-grow: 4;
+        margin: 4%;
+    }
+
+    .header__itens {
+        padding-right: 1em;
+    }
+
+    .barra__pesquisa__mobile {
+        display: block;
+        background: var(--branco);
+        border: 1px solid var(--branco);
+        border-radius: 20px;
+        height: 3em;
+        width: 100%;
+    }
+
+    .barra__pesquisa__mobile::placeholder {
+        display: block;
+        background: url(/images/lupa.svg) no-repeat;
+        background-position: right;
+        color: var(--verde-escuro);
+        font-family: var(--fonte-principal);
+        font-weight: 500;
+        font-size: 16px;
+        padding: 1em 2em;
+    }
+
+
+}
